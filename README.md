@@ -1,85 +1,112 @@
-# 1. Python知识手册
+- [Python知识手册](#python知识手册)
+  - [导读](#导读)
+  - [手册内容](#手册内容)
+  - [主要更新内容](#主要更新内容)
+  - [如何阅读和使用《手册》](#如何阅读和使用手册)
+  - [手册版本历史信息](#手册版本历史信息)
+  - [如何获取《Python知识手册》](#如何获取python知识手册)
 
-- [1. Python知识手册](#1-python%E7%9F%A5%E8%AF%86%E6%89%8B%E5%86%8C)
-  - [1.1. 前言](#11-%E5%89%8D%E8%A8%80)
-  - [1.2. 微信公众号](#12-%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7)
-  - [1.3. 知识星球](#13-%E7%9F%A5%E8%AF%86%E6%98%9F%E7%90%83)
-  - [1.4. 感谢的话](#14-%E6%84%9F%E8%B0%A2%E7%9A%84%E8%AF%9D)
+# Python知识手册
 
-《Python知识手册》 由 『Python数据之道』出品
+《Python知识手册》 由 微信公众号 **「Python数据之道」** 出品
 
-作者：李阳
+作者：阳哥
 
 个人网站： [http://liyangbit.com](http://liyangbit.com)
 
-手册获取地址：[《Python知识手册-v2018》](https://github.com/liyangbit/Python-Knowledge-Handbook/tree/master/handbook/Version-2018)
+手册获取地址：[《Python知识手册》](https://github.com/liyangbit/Python-Knowledge-Handbook/tree/master/handbook)
 
-## 1.1. 前言
+## 导读
 
-“种一棵树，最好的时间是十年前，其次是现在。”
+大家好，我是 阳哥 。
 
-博客刚兴起不久的时候，大概 04年左右，我就开始写一些博客文章，但工作之后基本上就没有坚持写了。
-现在想来，有些可惜了。
+《Python知识手册》由「Python数据之道」出品，最新版会在公众号上进行发布，大家可以在公众号「Python数据之道」后台回复 **600** 获取最新版。
 
-从 2016年底开始，再次坚持写作，并于2017年开通了微信公众号『Python数据之道』。
-期间陆陆续续，写了些许Python相关的内容，希望借此机会，将这些显得零散的内容整合起来，形成一本小册子，名曰《Python知识手册》，一共365页。手册的封面如下：
+<!-- <div align="center"><img src="images/QR-PyDataLab-202002.jpg" width="120"/></div> -->
 
-<div align="center">
-    <img src="images/1.png" width="600"/>
-</div>
+<div align="center"><img src="https://tva1.sinaimg.cn/large/008i3skNgy1gycgzexskhj3076076t8y.jpg" width="120"/></div>
 
-<div align="center">
-    <img src="images/4.png" width="600"/>
-</div>
 
-虽然我写了一些关于 Python零基础入门的文章，但《Python知识手册》不是一本从 Python
-零基础开始的手册，针对手册的阅读，各位读者最好有一些 Python 的基本功底。
+虽然我写了一些关于 Python 零基础入门的文章，但《Python知识手册》 并没有比较完整的
+覆盖 Python 的基础知识。因此，针对手册的阅读，各位读者最好有一些 Python 的基本功底。
 
-当前版本中（v2018），手册主要包含以下几方面相关的内容：
+## 手册内容
 
-* Jupyter Notebook
-* Numpy
-* Pandas
-* Matplotlib
-* Seabon
-* Bokeh
-* 若干个项目实战案例
+2019 年 2 月，「Python数据之道」发布了《Python知识手册》的第一个版本（v2018版）。
+
+2022 年 2 月，《Python知识手册》更新到 V4.0 版。
+
+手册封面如下：
+
+![封面-Python知识手册](https://tva1.sinaimg.cn/large/e6c9d24egy1gznalxsrxtj20gj0neac0.jpg)
+
+<!-- ![封面-Python知识手册](https://tva1.sinaimg.cn/large/008i3skNgy1gui8arir1oj60gj0neacj02.jpg) -->
+
+
+当前版本中，手册主要包含以下几方面相关的内容：
+
+
+![主要内容](https://tva1.sinaimg.cn/large/e6c9d24egy1gznag0f0zjj20u010xae1.jpg)
+
+<!-- <div align="center">
+    <img src="images/content.png" width="600"/>
+</div> -->
+
+<!-- - Python 基础知识
+- Jupyter Notebook
+- Numpy
+- Pandas
+- Matplotlib
+- Seaborn
+- Bokeh
+- Plotly
+- 若干个项目实战案例
+- Python 学习资料 -->
 
 如没有特殊的说明，手册中代码的运行环境如下：
 
-* windows 7 或 windows 10 系统
-* python 3.5 或 python 3.6
-* Anaconda / PyCharm / Jupyter Notebook
+- windows 7 或 windows 10 系统 或 MacOS 系统
+- python 3.5 或 python 3.5+
+- Anaconda / Jupyter Notebook / VS Code
 
 
-若上述这些内容，能给诸位读者带来益处，我觉得付出些辛劳，也是值得的。当然，由于个人水平有限，文章中内容难免有不准确的地方，不足之处，敬请理解。
+## 主要更新内容
 
-若对我发的内容有兴趣，欢迎大家通过以下途径来关注或者加入社群。
+1. 添加关于Python视频制作工具 `Manim` 介绍的内容，由于涉及不少 gif图以及视频，在pdf中不能显示，此部分内容以链接形式添加；
 
-## 1.2. 微信公众号
+1. 「用Python快速获取基金的持仓变化情况」中的内容，部分数据接口失效，进行更新；
 
-公众号『Python数据之道』秉承“让数据更有价值”的理念，主要分享数据相关的内容，包括数据分析，挖掘，可视化，机器学习，深度学习等。公众号所有文章都可以免费阅读，欢迎关注。
+1. 更新部分书写错误；
 
-<div align="center"><img src="images/logo.jpg" width="120"/></div>
+<!-- ## 与优秀者同行
 
-## 1.3. 知识星球
+从 V3.0 版开始，加强了延伸阅读的内容，一个人的水平、时间和经验总是有限的。在《手册》中，以介绍或链接的方式，添加了部分内容，包括书籍介绍、网站及博客介绍、翻译内容链接、读者投稿文章的链接等，这些内容，可以在《手册》的学习资料章节进行了解。 -->
 
-由于个人时间和精力有限，对于众多读者的提问和需求不能一一交流与回复。
-开通了付费的知识星球『Python数据之道成长圈』，希望能够集中有限的时间来更好的交流和互动，同时可以汇聚一部分志同道合的人员，共同成长。
+## 如何阅读和使用《手册》
 
-**知识星球主要内容：**
+《Python知识手册》的大部分章节来自公众号「Python数据之道」发布的内容，每个章节，基本上是一个独立的内容。因此，读者可以根据自己的知识储备情况，有针对性的阅读，熟悉的章节可以快速的阅览或者跳过，对于有兴趣的内容，可以详细阅读和练习。
 
-* 作为圈友，我会透过数据，用 Python 分享我的一些观察、分析、思考，以及一些个人经验； 
-* 更重要的，是大家的主题分享和切磋讨论
+## 手册版本历史信息
 
-<div align="center">
-    <img src="images/xingqiu-1.png" width="400"/>
-</div>
+《Python知识手册》更新信息情况如下：
 
-## 1.4. 感谢的话
+| 版本号  | 日期  | 主要内容描述  |
+|---|---|---|
+|v4.0| 2022-02-24  | 添加Manim相关内容，更新部分财经实践内容以及一些书写错误|
+|v3.3| 2021-09-16  | 更新 Pandas相关内容，添加财经实践板块|
+|v3.2| 2021-08-02  | 更新 Pandas、Plotly等相关内容|
+|v3.1| 2021-07-12  | 更新 Matplotlib、Pandas等相关内容|
+|v3.0| 2021-01-01  | 更新 VS Code、Pandas、Plotly 以及学习资料等内容|
+|v2.2| 2020-05-11  | 更新Plotly相关内容和Python学习资料的章节|
+|v2.1| 2020-02-14  | 添加“导读” 和 “Python网站”  章节，移除部分项目|
+|v2.0.1| 2020-02-02  | 修复2.0 版没有书签的 bug  |
+|v2.0| 2020-02-02  | 添加 Python 基础知识；添加 Plotly 内容  |
+|v2018| 2019-02-25  | 第一版，初始版本  |
 
-坚持写作，少了许多与家人陪伴的时光，感谢家人对我的支持与理解。
-通过『Python数据之道』，结识了不少大佬以及新的朋友，通过交流，让我愈发感到自己的渺小与不足，希望能与诸位共同成长。
-感谢 @陈典铖 为《Python知识手册》制作了精美的封面，感谢诸位大佬以及众多读者对手册内容的支持。
+## 如何获取《Python知识手册》
 
-当然，由于个人水平有限，文章中内容难免有不准确的地方，欢迎通过公众号联系我。
+手册获取地址：[《Python知识手册》](https://github.com/liyangbit/Python-Knowledge-Handbook/tree/master/handbook)
+
+<!-- <div align="center"><img src="images/QR-PyDataLab-202002.jpg" width="120"/></div> -->
+
+<div align="center"><img src="https://tva1.sinaimg.cn/large/008i3skNgy1gycgzexskhj3076076t8y.jpg" width="120"/></div>
